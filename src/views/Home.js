@@ -7,6 +7,7 @@ const Home = () => {
     const [data, setData] = useState([]);
     const getData = async () => {
         const response = await imageService.getProgrammers();
+        console.log(response);
         return setData(response);
     };
     return (
